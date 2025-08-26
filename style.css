@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 670px;
+    width: 675px;
+    border: solid black 1px;
+}
+
+#container div{
+    height: 40px;
+    width: 40px;
+    border: solid black 1px;
+    flex: 0 0 40px;
+}
+
+#container div:hover{
+    background-color: black;
+}
