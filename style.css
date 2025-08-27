@@ -18,10 +18,11 @@ body{
     flex: 1 0 auto;
 }
 
-.square:hover{
-    background-color: black;
+
+#right_section{
+    margin: 50px;
 }
 
 #controls{
-    margin: 50px;
+    margin-top: 50px;
 }
