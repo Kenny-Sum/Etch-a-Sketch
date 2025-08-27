@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 700px;
+    margin: 50px;
+    border: solid black 1px;
+}
+
+.square{
+    border: solid black 1px;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+}
+
+
+#right_section{
+    margin: 50px;
+}
+
+#controls{
+    margin-top: 50px;
+}
