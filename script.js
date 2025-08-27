@@ -1,11 +1,18 @@
 const container = document.querySelector("#container");
 const square = document.querySelector(".square");
+const info = document.querySelector("#info");
 
 function createGrid(){
     container.innerHTML =""; // Removes all of the elements within the element container.
+    info.innerHTML = ""; 
 
     // Input number and submit
     let sizeInput = document.getElementById("sizeInput").value; // let sizeInput be equal to the value inputted
+    if(sizeInput > 100){
+        info.innerHTML = "Numbers bigger then 100 will not be used";
+        console.log("Numbers bigger then 100 will not be used");
+        return
+    }
 
     // container
     
@@ -29,6 +36,7 @@ function createGrid(){
 }
 
 function resetGrid(){
+    info.innerHTML = ""; 
     container.innerHTML = "";
 }
 
