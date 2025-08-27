@@ -11,10 +11,16 @@ function createGrid(){
 
     let grid = sizeInput * sizeInput
     console.log(grid)
+    const gridSize = 700;
+
+    const square = document.querySelector(".square");
 
     for (let i = 0; i < grid; i++){
-        const div = document.createElement("div");
-        container.appendChild(div);
+        const square = document.createElement("div");
+        square.classList.add("square")
+        square.style.width = `${gridSize/sizeInput}px`;
+        square.style.height = `${gridSize/sizeInput}px`;
+        container.appendChild(square);
     }
 }
 

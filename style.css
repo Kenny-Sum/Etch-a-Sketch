@@ -12,16 +12,13 @@ body{
     border: solid black 1px;
 }
 
-#container div{
+.square{
     border: solid black 1px;
     box-sizing: border-box;
     flex: 1 0 auto;
-
-    width: 350px;
-    height: 350px;
 }
 
-#container div:hover{
+.square:hover{
     background-color: black;
 }
 
