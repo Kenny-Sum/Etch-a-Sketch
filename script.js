@@ -1,21 +1,22 @@
-let numInput;
 
-document.getElementById("numSubmit").onclick = function(){
-    numInput = document.getElementById("numInput").value;
-    console.log(numInput);
+
+function createGrid(){
+    // Input number and submit
+    let sizeInput = document.getElementById("sizeInput").value;
+    console.log(sizeInput)
+    
+
+    // container
+    const container = document.querySelector("#container");
+
+    let grid = sizeInput * sizeInput
+    console.log(grid)
+
+    for (let i = 0; i < grid; i++){
+        const div = document.createElement("div");
+        container.appendChild(div);
+    }
 }
 
 
-
-// container
-const container = document.querySelector("#container");
-
-i = 0
-j = 2*2
-
-while (i < j){
-    const div = document.createElement("div");
-    container.appendChild(div);
-    i ++
-}
-
+document.getElementById('numSubmit').onclick = createGrid;
