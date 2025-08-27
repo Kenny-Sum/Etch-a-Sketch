@@ -1,2 +1,2 @@
 # Etch-a-Sketch
-Testing commit to kenny's branch
+Testing commit to the main branch
